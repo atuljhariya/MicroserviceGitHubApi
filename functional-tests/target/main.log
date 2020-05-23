@@ -1,0 +1,137 @@
+13:39:17.985 request:
+1 > GET http://localhost:8080/actuator/health
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.1)
+
+13:39:18.014 response time in milliseconds: 27.01
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/vnd.spring-boot.actuator.v3+json
+1 < Date: Sat, 23 May 2020 08:09:18 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"status":"UP"}
+
+13:39:18.032 request:
+1 > GET http://localhost:8080/actuator/info
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.1)
+
+13:39:18.043 response time in milliseconds: 10.33
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/vnd.spring-boot.actuator.v3+json
+1 < Date: Sat, 23 May 2020 08:09:18 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"build":{"artifact":"microservice","name":"microservice","time":"2020-05-23T08:00:43.952Z","version":"1.0.0-SNAPSHOT","group":"com.telstra.code-challenge"}}
+
+13:39:18.209 request:
+1 > GET http://localhost:8080/oldusers?maxusers=3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.1)
+
+13:39:19.481 response time in milliseconds: 1270.95
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sat, 23 May 2020 08:09:19 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+[{"id":"44","login":"errfree","html_url":"https://github.com/errfree"},{"id":"81","login":"engineyard","html_url":"https://github.com/engineyard"},{"id":"119","login":"ministrycentered","html_url":"https://github.com/ministrycentered"}]
+
+13:39:19.528 request:
+1 > GET http://localhost:8080/quotes/random
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.1)
+
+13:39:20.283 response time in milliseconds: 752.95
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sat, 23 May 2020 08:09:19 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"type":"success","value":{"id":1,"quote":"Working with Spring Boot is like pair-programming with the Spring developers."}}
+
+13:39:20.318 request:
+1 > GET http://localhost:8080/quotes
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.1)
+
+13:39:20.692 response time in milliseconds: 370.34
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sat, 23 May 2020 08:09:20 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+[{"type":"success","value":{"id":1,"quote":"Working with Spring Boot is like pair-programming with the Spring developers."}},{"type":"success","value":{"id":2,"quote":"With Boot you deploy everywhere you can find a JVM basically."}},{"type":"success","value":{"id":3,"quote":"Spring has come quite a ways in addressing developer enjoyment and ease of use since the last time I built an application using it."}},{"type":"success","value":{"id":4,"quote":"Previous to Spring Boot, I remember XML hell, confusing set up, and many hours of frustration."}},{"type":"success","value":{"id":5,"quote":"Spring Boot solves this problem. It gets rid of XML and wires up common components for me, so I don't have to spend hours scratching my head just to figure out how it's all pieced together."}},{"type":"success","value":{"id":6,"quote":"It embraces convention over configuration, providing an experience on par with frameworks that excel at early stage development, such as Ruby on Rails."}},{"type":"success","value":{"id":7,"quote":"The real benefit of Boot, however, is that it's just Spring. That means any direction the code takes, regardless of complexity, I know it's a safe bet."}},{"type":"success","value":{"id":8,"quote":"I don't worry about my code scaling. Boot allows the developer to peel back the layers and customize when it's appropriate while keeping the conventions that just work."}},{"type":"success","value":{"id":9,"quote":"So easy it is to switch container in #springboot."}},{"type":"success","value":{"id":10,"quote":"Really loving Spring Boot, makes stand alone Spring apps easy."}},{"type":"success","value":{"id":11,"quote":"I have two hours today to build an app from scratch. @springboot to the rescue!"}},{"type":"success","value":{"id":12,"quote":"@springboot with @springframework is pure productivity! Who said in #java one has to write double the code than in other langs? #newFavLib"}}]
+
+13:39:20.757 request:
+1 > GET http://localhost:8080/hello
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.1)
+
+13:39:20.761 response time in milliseconds: 3.43
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sat, 23 May 2020 08:09:20 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"id":4,"content":"Hello, World!"}
+
+n: 1; mode=block
+{"id":2,"content":"Hello, World!"}
+
+nt":"Hello, World!"}
+
