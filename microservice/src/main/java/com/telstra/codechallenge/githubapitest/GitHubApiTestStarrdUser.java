@@ -1,14 +1,14 @@
-package com.telstra.codechallenge.githuabitest;
+package com.telstra.codechallenge.githubapitest;
 
-public class GitHubTestStardUser {
+public class GitHubApiTestStarrdUser {
 
 	private String html_url;
 	private String watchers_count;
 	private String language;
 	private String description;
 	private String name;
-	public GitHubTestStardUser() {};
-	public GitHubTestStardUser(String html_url, String watchers_count, String language, String description,
+	public GitHubApiTestStarrdUser() {};
+	public GitHubApiTestStarrdUser(String html_url, String watchers_count, String language, String description,
 			String name) {
 		super();
 		this.html_url = html_url;

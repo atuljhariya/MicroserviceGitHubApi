@@ -1,4 +1,4 @@
-package com.telstra.codechallenge.githuabitest;
+package com.telstra.codechallenge.githubapitest;
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -57,12 +57,12 @@ public class GitHubApiTestController {
 	}
 
 	@RequestMapping(path = "/stardusers", method = RequestMethod.GET)
-	public List<GitHubTestStardUser> StarUsers(@RequestParam(value = "maxusers") String maxusers) {
+	public List<GitHubApiTestStarrdUser> StarUsers(@RequestParam(value = "maxusers") String maxusers) {
 
 		JSONArray jsonArray;
 		String url = starrdUserUrl + LocalDate.now().minus(Period.ofDays(7)).toString() + starrdUserParam;
 
-		List<GitHubTestStardUser> userList = new ArrayList<>();
+		List<GitHubApiTestStarrdUser> userList = new ArrayList<>();
 		HttpHeaders headers = new HttpHeaders();
 		HttpEntity<String> entity = new HttpEntity<>(headers);
 		headers.add("Accept", "application/vnd.github.preview");
@@ -102,12 +102,12 @@ public class GitHubApiTestController {
 		return userList;
 	}
 
-	private List<GitHubTestStardUser> mapStardUsers(List<GitHubTestStardUser> userList, JSONArray jsonArray,
+	private List<GitHubApiTestStarrdUser> mapStardUsers(List<GitHubApiTestStarrdUser> userList, JSONArray jsonArray,
 			int maxCount) {
 
 		for (int i = 0; i < maxCount; i++) {
 			JSONObject jsonObj = jsonArray.getJSONObject(i);
-			GitHubTestStardUser user = new GitHubTestStardUser();
+			GitHubApiTestStarrdUser user = new GitHubApiTestStarrdUser();
 			user.setHtml_url(jsonObj.get("html_url").toString());
 			user.setWatchers_count(jsonObj.get("watchers_count").toString());
 			user.setLanguage(jsonObj.get("language").toString());

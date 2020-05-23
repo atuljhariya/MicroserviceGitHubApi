@@ -25,7 +25,7 @@ public class FunctionalIT {
   
   @Karate.Test
   Karate testgitHubApiOldUsersTest() {
-    return Karate.run("githubapiolduserstest").relativeTo(getClass());;
+    return Karate.run("githubapiolduserstest").relativeTo(getClass());
   }
 
 }

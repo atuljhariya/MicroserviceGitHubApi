@@ -1,4 +1,4 @@
-package com.telstra.codechallenge.githuabitest;
+package com.telstra.codechallenge.githubapitest;
 
 public class GitHubTestUser {
 
